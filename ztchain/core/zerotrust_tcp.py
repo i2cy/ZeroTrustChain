@@ -5,12 +5,11 @@
 # Filename: zerotrust_tcp
 # Created on: 2022/2/1
 
-import i2cylib.network.I2TCP.client as i2tc
-import i2cylib.network.I2TCP.server as i2ts
+import i2cylib.network.I2TCP as i2t
 import rsa
 
 
-class ZTClient(i2tc.Client):
+class ZTClient(i2t.Client):
 
     def __init__(self, *args, **kwargs):
         """
